@@ -15,15 +15,15 @@ public class GameManager : MonoBehaviour
         }
 
         instance = this;
-        SceneManager.sceneLoad += LoadState;
+        SceneManager.sceneLoaded += LoadState;
         DontDestroyOnLoad(gameObject);
     }
 
     // Ressources
-    Public list<Sprite> playerSprites;
-    Public list<Sprite> weeaponSprites;
-    Public list<int> weaponPrice;
-    Public list<int> xpTable;
+    public List<Sprite> playerSprites;
+    public List<Sprite> weeaponSprites;
+    public List<int> weaponPrices;
+    public List<int> xpTable;
 
     // References
     public Player player;
@@ -51,14 +51,14 @@ public class GameManager : MonoBehaviour
         s += experience.ToString() + "|";
         s += "0";
 
-        Playerprefs.SetString("SaveState", s);
+        PlayerPrefs.SetString("SaveState", s);
     }
     public void LoadState(Scene s, LoadSceneMode mode)
     {
         if (!PlayerPrefs.HasKey("SaveState"))
             return;
 
-        string[] data = Playerprefs.GetString("SaveState").Split('|');
+        string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
         // Change player skin
         pesos = int.Parse(data[1]);
