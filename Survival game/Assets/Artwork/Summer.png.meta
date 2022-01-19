@@ -1066,7 +1066,7 @@ TextureImporter:
       name: Grass_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 176
         width: 16
         height: 16
@@ -1528,7 +1528,7 @@ TextureImporter:
       name: Grass_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 160
         width: 16
         height: 16
@@ -1969,7 +1969,7 @@ TextureImporter:
       name: Grass_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 144
         width: 16
         height: 16
@@ -2389,7 +2389,7 @@ TextureImporter:
       name: Grass_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 128
         width: 16
         height: 16
@@ -2851,7 +2851,7 @@ TextureImporter:
       name: Grass_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 112
         width: 16
         height: 16
@@ -3313,12 +3313,12 @@ TextureImporter:
       name: Grass_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 96
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50000095}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3796,7 +3796,7 @@ TextureImporter:
       name: Grass_0
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 80
         width: 16
         height: 16

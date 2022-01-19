@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rocks : Collectable
 {
-    public Sprite emptyChest;
+    public Sprite smallRocks;
     public int rockAmount = 5;
 
     protected override void OnCollect()
@@ -12,7 +12,7 @@ public class Rocks : Collectable
         if (!collected)
         {
             collected = true;
-            GetComponent<SpriteRenderer>().sprite = emptyChest;
+            GetComponent<SpriteRenderer>().sprite = smallRocks;
             Debug.Log("Grant " + rockAmount + " stone");
         }
     }

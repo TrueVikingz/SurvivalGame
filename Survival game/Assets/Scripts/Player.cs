@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     private BoxCollider2D boxCollider2D;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
+    public float Speed;
 
     private void Start()
     {
@@ -32,14 +33,14 @@ public class Player : MonoBehaviour
         if (hit.collider == null)
         {
             // Make this thing move!
-            transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
+            transform.Translate(0, moveDelta.y * Speed * Time.deltaTime, 0);
         }
 
         hit = Physics2D.BoxCast(transform.position, boxCollider2D.size, 0, new Vector2(moveDelta.x,0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {
             // Make this thing move!
-            transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
+            transform.Translate(moveDelta.x * Speed * Time.deltaTime, 0, 0);
         }
 
     }
