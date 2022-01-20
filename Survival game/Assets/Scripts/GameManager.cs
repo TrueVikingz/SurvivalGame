@@ -33,15 +33,22 @@ public class GameManager : MonoBehaviour
 
     // Logic
     public int pesos;
+    public int wood;
+    public int stone;
     public int experience;
 
     // Floating text
-    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration) => floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    {
+        floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+    }
 
     // Save state
     /*
      * INT preferedSkin
      * INT pesos
+     * INT wood
+     * INT stone
      * INT experience
      * INT weaponLevel
      */
@@ -52,6 +59,8 @@ public class GameManager : MonoBehaviour
 
         s += "0" + "|";
         s += pesos.ToString() + "|";
+        s += wood.ToString() + "|";
+        s += stone.ToString() + "|";
         s += experience.ToString() + "|";
         s += "0";
 
@@ -66,7 +75,9 @@ public class GameManager : MonoBehaviour
 
         // Change player skin
         pesos = int.Parse(data[1]);
-        experience = int.Parse(data[2]);
+        wood = int.Parse(data[2]);
+        stone = int.Parse(data[3]);
+        experience = int.Parse(data[4]);
         // Change the weapon level
 
         Debug.Log("LoadState");

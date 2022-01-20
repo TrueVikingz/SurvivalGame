@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tree : Collectable
+public class Trees : Collectable
 {
     public Sprite stump;
     public int woodAmount = 5;
@@ -13,7 +13,7 @@ public class Tree : Collectable
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = stump;
-            Debug.Log("Grant " + woodAmount + " wood");
+            GameManager.instance.ShowText("+" + woodAmount + " wood!", 25, Color.green, transform.position, Vector3.up * 50, 3.0f);
         }
     }
 }

@@ -17,7 +17,7 @@ public class FloatingTextManager : MonoBehaviour
             txt.UpdateFloatingText();
     }
 
-    public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration, float duration1)
+    public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
         FloatingText floatingText = GetFloatingText();
 
@@ -30,11 +30,6 @@ public class FloatingTextManager : MonoBehaviour
         floatingText.duration = duration;
 
         floatingText.show();
-    }
-
-    internal void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
-    {
-        throw new NotImplementedException();
     }
 
     private FloatingText GetFloatingText()
