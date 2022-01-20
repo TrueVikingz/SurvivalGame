@@ -5,6 +5,18 @@ TextureImporter:
   - first:
       213: -2311659948842064771
     second: Main_player
+  - first:
+      213: 7364682651488144517
+    second: Walk_Right_0
+  - first:
+      213: -6287787046888575383
+    second: Walk_Right_1
+  - first:
+      213: -1182821291677670348
+    second: Walk_Right_2
+  - first:
+      213: -4709456396536258026
+    second: Walk_Right_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
