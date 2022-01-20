@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rocks : Collectable
 {
     public Sprite smallRocks;
-    public int rockAmount = 5;
+    public int stoneAmount = 5;
 
     protected override void OnCollect()
     {
@@ -13,7 +13,7 @@ public class Rocks : Collectable
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = smallRocks;
-            Debug.Log("Grant " + rockAmount + " stone");
+            GameManager.instance.ShowText("+" + stoneAmount + " stone!", 25, Color.gray, transform.position, Vector3.up * 50, 3.0f);
         }
     }
 }
