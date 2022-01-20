@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f8de18b-85f4-4f3d-9972-298321585c65" name="Changes" comment="" />
+    <list default="true" id="8f8de18b-85f4-4f3d-9972-298321585c65" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Survival game/Assets/Animation/Player/Player idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Survival game/Assets/Animation/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Survival game/Assets/Animation/Player/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Survival game/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Survival game/Assets/Scenes/Main.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +34,7 @@
       <updated>1641819086178</updated>
       <workItem from="1641819092750" duration="56000" />
       <workItem from="1642676003138" duration="20000" />
+      <workItem from="1642679117392" duration="41000" />
     </task>
     <servers />
   </component>
