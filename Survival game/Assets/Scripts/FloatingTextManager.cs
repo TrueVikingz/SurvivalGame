@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FloatingTextManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class FloatingTextManager : MonoBehaviour
 
     private void Update()
     {
-        foreach (FloatingText txt in floatingTexts)
+        foreach(FloatingText txt in floatingTexts)
             txt.UpdateFloatingText();
     }
 
@@ -28,7 +29,6 @@ public class FloatingTextManager : MonoBehaviour
         floatingText.duration = duration;
 
         floatingText.show();
-
     }
 
     private FloatingText GetFloatingText()
