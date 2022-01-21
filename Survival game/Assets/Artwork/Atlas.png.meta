@@ -164,6 +164,9 @@ TextureImporter:
   - first:
       213: -1988828135353101337
     second: Chest_0
+  - first:
+      213: 4971049064686688367
+    second: Mob_Skellie
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1418,6 +1421,27 @@ TextureImporter:
       bones: []
       spriteID: 7e3d9f029534664e0800000000000000
       internalID: -1988828135353101337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mob_Skellie
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6810bd59c6bcf440800000000000000
+      internalID: 4971049064686688367
       vertices: []
       indices: 
       edges: []
