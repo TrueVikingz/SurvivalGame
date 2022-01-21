@@ -53,3 +53,6 @@ TagManager:
   - name: Interactable
     uniqueID: 3939365283
     locked: 0
+  - name: Tools and weapons
+    uniqueID: 2612335551
+    locked: 0
