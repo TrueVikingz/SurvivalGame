@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +10,7 @@ public class FloatingText
     public float duration;
     public float lastShown;
 
-    public void show()
+    public void Show()
     {
         active = true;
         lastShown = Time.time;
@@ -38,3 +36,4 @@ public class FloatingText
         go.transform.position += motion * Time.deltaTime;
     }
 }
+

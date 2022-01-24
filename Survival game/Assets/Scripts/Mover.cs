@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Mover : Fighter
 {
-    protected BoxCollider2D boxCollider2D;
+    protected BoxCollider2D boxCollider;
     protected Vector3 moveDelta;
     protected RaycastHit2D hit;
     protected float ySpeed = 0.75f;
@@ -12,7 +12,7 @@ public abstract class Mover : Fighter
 
     protected virtual void Start()
     {
-        boxCollider2D = GetComponent<BoxCollider2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
 
@@ -35,14 +35,14 @@ public abstract class Mover : Fighter
 
 
         // Make sure we can move in this direction, by casting a box there first, if the box returns null, we are free to move.
-        hit = Physics2D.BoxCast(transform.position, boxCollider2D.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {
             // Make this thing move!
             transform.Translate(0, moveDelta.y  * Time.deltaTime, 0);
         }
 
-        hit = Physics2D.BoxCast(transform.position, boxCollider2D.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {
             // Make this thing move!

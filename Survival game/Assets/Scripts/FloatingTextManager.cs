@@ -29,7 +29,7 @@ public class FloatingTextManager : MonoBehaviour
         floatingText.motion = motion;
         floatingText.duration = duration;
 
-        floatingText.show();
+        floatingText.Show();
     }
 
     private FloatingText GetFloatingText()
