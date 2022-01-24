@@ -14,7 +14,7 @@ public class FloatingText
     {
         active = true;
         lastShown = Time.time;
-        go.SetActive(true);
+        go.SetActive(active);
 
     }
 
@@ -29,7 +29,6 @@ public class FloatingText
         if (!active)
             return;
 
-        // if   10      -     7    >      2
         if (Time.time - lastShown > duration)
             Hide();
 
