@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     public FloatingTextManager floatingTextManager;
 
     // Logic
-    public int pesos;
+    public int gold;
     public int wood;
     public int stone;
     public int experience;
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         string s = "";
 
         s += "0" + "|";
-        s += pesos.ToString() + "|";
+        s += gold.ToString() + "|";
         s += wood.ToString() + "|";
         s += stone.ToString() + "|";
         s += experience.ToString() + "|";
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
         // Change player skin
-        pesos = int.Parse(data[1]);
+        gold = int.Parse(data[1]);
         wood = int.Parse(data[2]);
         stone = int.Parse(data[3]);
         experience = int.Parse(data[4]);
