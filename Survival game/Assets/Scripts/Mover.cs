@@ -47,6 +47,10 @@ public abstract class Mover : Fighter
         {
             // Make this thing move!
             transform.Translate(moveDelta.x  * Time.deltaTime, 0, 0);
+
+            
         }
+        
     }
+
 }
