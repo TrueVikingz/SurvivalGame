@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterMenu : MonoBehaviour
 {
@@ -68,5 +69,9 @@ public class CharacterMenu : MonoBehaviour
         // xp Bar
         xpText.text = "NOT IMPLEMENTED";
         xpBar.localScale = new Vector3(0.5f, 0, 0);
+    }
+    public void ExitGame()
+    {
+        SceneManager.LoadScene("Main_Start");
     }
 }
