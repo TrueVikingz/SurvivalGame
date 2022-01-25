@@ -167,6 +167,9 @@ TextureImporter:
   - first:
       213: 4971049064686688367
     second: Mob_Skellie
+  - first:
+      213: 4204374477710404856
+    second: Menu_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1442,6 +1445,27 @@ TextureImporter:
       bones: []
       spriteID: f6810bd59c6bcf440800000000000000
       internalID: 4971049064686688367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fca5aecf40f85a30800000000000000
+      internalID: 4204374477710404856
       vertices: []
       indices: 
       edges: []
