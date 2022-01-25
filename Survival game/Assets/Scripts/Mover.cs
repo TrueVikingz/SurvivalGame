@@ -19,7 +19,7 @@ public abstract class Mover : Fighter
     protected virtual void UpdateMotor(Vector3 input)
     {
         // Reset MoveDelta
-        moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
+        moveDelta = input;
 
               // Swap sprite direction, wether you're going right or left
           if (moveDelta.x > 0)
