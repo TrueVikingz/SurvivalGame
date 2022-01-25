@@ -12,6 +12,7 @@ public class Enemy : Mover
     public float chaseLenght = 5;
     private bool chasing;
     private bool collidingWithPlayer;
+    private BoxCollider2D boxCollider;
     private Transform playerTransform;
     private Vector3 startingPosition;
 
@@ -31,10 +32,9 @@ public class Enemy : Mover
     private void FixedUpdate()
     {
         // Is the player in range?
-        if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLenght)
+        if(Vector3.Distance(playerTransform.position, startingPosition) < chaseLenght)
         {
-            if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLenght)
-                chasing = true;
+            chasing = Vector3.Distance(playerTransform.position, startingPosition) < triggerLenght;
 
             if (chasing)
             {
@@ -56,12 +56,12 @@ public class Enemy : Mover
 
         // Check for overlaps
         collidingWithPlayer = false;
-        boxCollider.OverlapCollider(filter, hits);
+        //boxCollider.OverlapCollider(filter, hits);
         for (int i = 0; i < hits.Length; i++)
         {
                 continue;
 
-            if (hits[i].tag == "Fighter" && hits[i].name == "Player")
+            if(hits[i].tag == "Fighter" && hits[i].name == "Player")
             {
                 collidingWithPlayer = true;
             }

@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     public int experience;
 
     // Floating text
-    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    public void ShowText(string msg, string v, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
         floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
     }
@@ -84,8 +84,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("LoadState");
     }
 
-    /*internal void ShowText(string v1, int v2, Color magenta, Vector3 position, Vector3 vector3, float v3)
+    internal void ShowText(string v1, int v2, Color magenta, Vector3 position, Vector3 vector3, float v3)
     {
         throw new NotImplementedException();
-    }*/
+    }
 }
