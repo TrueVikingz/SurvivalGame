@@ -50,9 +50,9 @@ public class GameManager : MonoBehaviour
         if (weaponPrices.Count <= weapon.weaponLevel)
             return false;
 
-        if(pesos >= weaponPrices[weapon.weaponLevel])
+        if(gold >= weaponPrices[weapon.weaponLevel])
         {
-            pesos -= weaponPrices[weapon.weaponLevel];
+            gold -= weaponPrices[weapon.weaponLevel];
             weapon.UpgradeWeapon();
             return true;
         }
